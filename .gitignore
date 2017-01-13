@@ -1,0 +1,3 @@
+generate/**/*.tif
+generate/**/*.tiff
+generate/**/*.mbtiles
