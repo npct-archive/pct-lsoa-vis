@@ -19,7 +19,7 @@ fi
 COLOURED=${BARE_NAME}-coloured.tiff
 
 if [ ! -e "$COLOURED" ]; then
-  gdaldem color-relief ${FILE} -alpha colour.txt ${COLOURED}
+  gdaldem color-relief ${FILE} -nearest_color_entry -alpha colour.txt ${COLOURED}
 fi
 
 rm -rf ${BARE_NAME}
