@@ -1,4 +1,6 @@
 #!/bin/sh
+set -e
+
 UPLOAD_DIR=$1
 
 echo "Compressing the (non blank) tiles before uploading to the server\n"

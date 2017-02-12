@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 SCRIPT_DIR=$(dirname "$(readlink -f $0)")
 export PATH=$PATH:${SCRIPT_DIR}
