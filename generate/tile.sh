@@ -19,6 +19,7 @@ fi
 COLOURED=${BARE_NAME}-coloured.tiff
 
 if [ ! -e "$COLOURED" ]; then
+  echo "Colouring in the raster"
   gdaldem color-relief ${FILE} -nearest_color_entry -alpha colour.txt ${COLOURED}
 fi
 
